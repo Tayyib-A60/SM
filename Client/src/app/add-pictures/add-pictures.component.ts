@@ -1,13 +1,12 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpEvent, HttpEventType } from '@angular/common/http';
-// import { ToastrService } from 'ngx-toastr'
+import { NotifierService } from 'angular-notifier';
 
 import { VehicleService } from '../services/vehicle.service';
 import { Vehicle } from '../models/vehicle.model';
 import { PhotoService } from '../services/photo.service';
 import { Photo } from '../models/Photo.model';
-import { AlertifyService } from '../services/alertify.service';
 
 
 @Component({
@@ -29,9 +28,9 @@ export class AddPicturesComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     // private toastr: ToastrService,
+    private notifierService: NotifierService,
     private photoService: PhotoService,
-    private vehicleService: VehicleService,
-    private alert: AlertifyService) {
+    private vehicleService: VehicleService) {
       route.params.subscribe(p => {
         this.vehicleId = +p['id'];
         if (isNaN(this.vehicleId) || this.vehicleId <= 0) {
@@ -73,7 +72,6 @@ export class AddPicturesComponent implements OnInit {
     if (confirm('Are you sure?')) {
       this.vehicleService.deleteVehicle(this.vehicle.id)
         .subscribe(x => {
-          this.alert.success('Vehicle delete was successful');
           console.log(x);
           this.router.navigate(['../../../vehicles'], {relativeTo: this.route});
         }, (err) => {
@@ -85,8 +83,7 @@ export class AddPicturesComponent implements OnInit {
     this.photoService.deletePhoto(id, this.vehicle.id).subscribe(res => {
       const index = this.photos.findIndex(p => p.id === id && p.vehicleId === this.vehicle.id);
       this.photos.splice(index, 1);
-      this.alert.success(`Photo with id ${id}  succesfully removed`);
-      // this.toastr.success(`Photo with id ${id}  succesfully removed`, 'Success');
+      this.notifierService.notify('success', `Photo with id ${id}  succesfully removed`);
       console.log(res);
       console.log(this.photos);
     }, (err) => {
@@ -104,9 +101,8 @@ export class AddPicturesComponent implements OnInit {
     .subscribe((event: HttpEvent<any>) => {
         switch (event.type) {
           case HttpEventType.Sent:
-             console.log('Request sent');
-             this.alert.success('Photo uploaded succesfully');
-            //  this.toastr.success('Photo uploaded succesfully', 'Success');
+            console.log('Request sent');
+            this.notifierService.notify('success', 'Photo uploaded succesfully');
             break;
           case HttpEventType.UploadProgress:
             const percentage = Math.round(100 * event.loaded / event.total);
@@ -114,8 +110,7 @@ export class AddPicturesComponent implements OnInit {
             break;
           case HttpEventType.Response:
             this.photos.push(event.body);
-            this.alert.success('Photo uploaded succesfully');
-            // this.toastr.success('Photo uploaded succesfully', 'Success');
+            // this.notifierService.notify('success', 'Photo uploaded succesfully');
         }
     }, err => {
       console.log('Error', err);

@@ -1,4 +1,4 @@
-import { ToastrService } from 'ngx-toastr';
+// import { ToastrService } from 'ngx-toastr';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
@@ -15,8 +15,7 @@ export class RegisterComponent implements OnInit {
   user: User;
   constructor(private userService: UserService,
               private router: Router,
-              private route: ActivatedRoute,
-              private toastr: ToastrService) { }
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.initializeForm();
@@ -35,7 +34,7 @@ export class RegisterComponent implements OnInit {
     this.userService.create(this.registrationForm.value).subscribe(user => {
       this.user = user as User;
       console.log(user);
-      this.toastr.success(`User with ${this.user.email} registered successfully`, 'Registered');
+      // this.toastr.success(`User with ${this.user.email} registered successfully`, 'Registered');
     }, error => {
     });
     this.registrationForm = new FormGroup({});

@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-// import { ToastrModule } from 'ngx-toastr';s
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotifierModule } from 'angular-notifier';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +32,6 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminVehicleListComponent } from './admin-vehicle-list/admin-vehicle-list.component';
 import { PaginationComponent } from './shared/pagination/pagination.component';
-import { AlertifyService } from './services/alertify.service';
 
 @NgModule({
   declarations: [
@@ -59,16 +58,24 @@ import { AlertifyService } from './services/alertify.service';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MDBBootstrapModule.forRoot(),
-    // ToastrModule.forRoot({
-    //   timeOut: 4000,
-    //   positionClass: 'toast-top-right',
-    //   preventDuplicates: true,
-    // }),
+    NotifierModule.withConfig({
+      position: {
+        horizontal: {
+          position: 'right',
+          distance: 25
+        },
+        vertical: {
+          position: 'top',
+          distance: 12,
+          gap: 10
+        }
+      }
+    }),
+    MDBBootstrapModule.forRoot()
   ],
   providers: [VehicleService, PhotoService, VehicleResolver, VehicleInterceptor,
      AuthGuardService, AuthService, LogResponseInterceptor, CacheInterceptor,
-     ContactFormService, UserService, HttpCacheService, AlertifyService,
+     ContactFormService, UserService, HttpCacheService,
      {provide: HTTP_INTERCEPTORS, useClass: LogResponseInterceptor, multi: true},
   {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true}],
   bootstrap: [AppComponent]

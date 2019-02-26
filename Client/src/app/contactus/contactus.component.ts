@@ -1,6 +1,7 @@
 import { ContactFormService } from './../services/contactForm.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-contactus',
@@ -10,7 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ContactusComponent implements OnInit {
   contactForm: FormGroup;
 
-  constructor(private contactService: ContactFormService) { }
+  constructor(private contactService: ContactFormService, private notifierService: NotifierService) { }
 
   ngOnInit() {
     this.initializeContactForm();
@@ -31,6 +32,10 @@ export class ContactusComponent implements OnInit {
   onSubmit() {
      this.contactService.createContactForm(this.contactForm.value).subscribe(res => {
        console.log(res);
+     }, (err) => {
+      this.notifierService.notify('error', `Not submitted, please check your internet`);
+     }, () => {
+      this.notifierService.notify('success', 'Submitted');
      });
      this.initializeContactForm();
   }

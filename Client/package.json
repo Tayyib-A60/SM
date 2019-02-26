@@ -21,6 +21,7 @@
     "@angular/router": "~7.2.0",
     "@types/chart.js": "^2.7.45",
     "angular-bootstrap-md": "^7.4.1",
+    "angular-notifier": "^4.1.1",
     "angular5-csv": "^0.2.11",
     "chart.js": "^2.5.0",
     "core-js": "^2.5.4",

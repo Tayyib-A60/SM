@@ -1,5 +1,6 @@
-<div *ngIf="photos">
-<mdb-card class="card-deck" *ngIf="photos.length>0">
+<div  *ngIf="photos">
+    <!-- class="card-deck" -->
+<mdb-card *ngIf="photos.length>0">
     <!--Card image-->
     <mdb-card-img [src]="'../../../assets/uploads/' + photos[0].fileName" alt="Card image cap"></mdb-card-img>
     <!--Card content-->
