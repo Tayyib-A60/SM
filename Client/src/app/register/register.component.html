@@ -1,0 +1,74 @@
+<!-- <div class="col-md-6 col-md-offset-3">
+  <h2>Register</h2>
+  <hr>
+  <form [formGroup]="registrationForm" (ngSubmit)='register()'>
+      <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                formControlName="name"
+                class="form-control">
+            </div>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                formControlName="email"
+                class="form-control">
+            </div>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                formControlName="password"
+                class="form-control">
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <button class="btn btn-success" type="submit" [disabled]="!registrationForm.valid">Register</button>
+              <a routerLink="/user/login" class="btn btn-link">Login</a>
+            </div>
+          </div>
+      </div>
+  </form>
+</div>
+<div class="in-visible">
+  <br>
+  <br>
+</div> -->
+
+
+<div class="col col-sm-6 col-md-6" style="margin: 0 auto !important;">
+    <form class="text-center border border-light p-5" [formGroup]="registrationForm" (ngSubmit)='register()'>
+
+        <p class="h4 mb-4">Register</p>
+        <input type="text" id="name" formControlName="name" class="form-control mb-4" placeholder="Name">
+        <input type="email" id="emai;" formControlName="email" class="form-control mb-4" placeholder="E-mail">
+        <input type="password" id="password" formControlName="password" class="form-control mb-4" placeholder="Password">
+
+        <div class="d-flex justify-content-around">
+        </div>
+        <button mdbBtn color="info" block="true" class="my-4" type="submit"
+        [disabled]="!registrationForm.valid">Register</button>
+
+      </form>
+  </div>
+  <br>
+  <br>
+  <br>

@@ -1,0 +1,42 @@
+<h1>Vehicle</h1>
+<div class="picture--management">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="nav-link" [class.active]="currentPage === 'details'"><a (click)="changePage('details')" aria-controls="basic" role="tab" data-toggle="tab">Vehicle</a></li>
+    <li role="presentation" class="nav-link" [class.active]="currentPage === 'photos'"><a (click)="changePage('photos')" aria-controls="photos" role="tab" data-toggle="tab">Photos</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" *ngIf="vehicle">
+    <!-- Vehicle tab -->
+    <div role="tabpanel" class="tab-pane" [class.active]="currentPage === 'details'" id="basic">
+      <h3>Name: {{vehicle.name}}</h3>
+      <h3>Description: {{vehicle.description}}</h3>
+      <h3>Cost: {{vehicle.costPrice}}</h3>
+      <h3>Selling: {{vehicle.sellingPrice}}</h3>
+      <br/>
+      <p>
+        <a class="btn btn-primary" [routerLink]="['../../../newVehicle/' + vehicleId]">Edit</a>
+        <button class="btn btn-danger" (click)="deleteVehicle()">Delete</button>
+        <a class="btn btn-default" [routerLink]="['/vehicles']">View All Vehicles</a>
+      </p>
+    </div>
+    <!-- Photos tab -->
+    <div role="tabpanel" class="tab-pane" [class.active]="currentPage === 'photos'" id="photos">
+      <h2>Photos</h2>
+      <input type="file" class="btn" (change)="onPhotoUpload()" #fileInput>
+      <br>
+      <div class="progress" *ngIf="progress && progress < 100">
+        <div class="progress-bar" [style.width]="progress + '%'">
+          <br>
+        </div>
+      </div>
+      <br>
+      <div *ngFor="let photo of photos">
+        <img  src="/uploads/{{photo.fileName}}" alt="/uploads/{{photo.fileName}}" class="img-thumbnail">
+        <button class="btn btn-danger"(click)="deletePhoto(photo.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

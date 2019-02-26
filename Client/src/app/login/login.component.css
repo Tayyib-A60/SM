@@ -1,0 +1,12 @@
+@media (min-width: 989px) {
+
+  .in-visible {
+    visibility: visible;
+  }
+}
+@media (max-width: 988px) {
+
+  .in-visible {
+    visibility: hidden;
+  }
+}

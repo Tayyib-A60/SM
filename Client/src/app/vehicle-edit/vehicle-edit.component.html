@@ -1,0 +1,88 @@
+<!-- <section class="section-book">
+  <div class="skrow">
+      <div class="skbook">
+          <div class="skbook__form">
+      <form class="skform" [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+          <div class="skform__group">
+            <input
+            type="text"
+            placeholder="Name"
+            id="name"
+            formControlName="name"
+            class="skform__input" required>
+            <label for="name" class="skform__label">Name</label>
+        </div>
+        <div class="skform__group">
+          <input
+          type="number"
+          placeholder="cost price"
+          id="costprice"
+          formControlName="costPrice"
+          class="skform__input" required>
+          <label for="costprice" class="skform__label">Cost Price</label>
+      </div>
+      <div class="skform__group">
+        <input
+        type="number"
+        placeholder="selling price"
+        id="sellingprice"
+        formControlName="sellingPrice"
+        class="skform__input" required>
+        <label for="sellingprice" class="skform__label">Selling Price</label>
+    </div>
+      <div class="skform__group">
+        <input
+        type="number"
+        placeholder="discount"
+        id="discount"
+        formControlName="discount"
+        class="skform__input" required>
+        <label for="discount" class="skform__label">Discount</label>
+    </div>
+    <div class="skform__group">
+      <textarea
+      type="text"
+      placeholder="description"
+      id="description"
+      formControlName="description"
+      class="skform__input" required
+      rows="6"></textarea>
+      <label for="description" class="skform__label">Description</label>
+  </div>
+  <div class="skform__group">
+    <div class="u-margin-top-medium">
+        <button
+          type="submit"
+          class="skbtn skbtn-success"
+          [disabled]="!vehicleForm.valid">{{editMode? 'Update': 'Save'}}</button>
+        <button type="button" class="skbtn skbtn-danger" *ngIf='!editMode' (click)="clear()">Cancel</button>
+        <button type="button" class="skbtn skbtn-danger" *ngIf='editMode' (click)='delete()'>Delete</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</section> -->
+
+<div class="col col-md-6" style="margin: 0 auto !important;">
+    <form class="text-center border border-light p-5"  [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+
+        <p class="h4 mb-4">{{editMode? 'Edit Vehicle': 'Create new Vehicle'}}</p>
+        <input type="text" id="defaultLoginFormEmail" formControlName="name" class="form-control mb-4" required placeholder="Vehicle Name">
+        <input type="number" id="defaultLoginFormEmail" formControlName="costPrice" class="form-control mb-4" required placeholder="Cost Price">
+        <input type="number" id="defaultLoginFormPassword" formControlName="sellingPrice" class="form-control mb-4" required placeholder="Selling Price">
+        <input type="number" id="defaultLoginFormPassword" formControlName="discount" class="form-control mb-4" placeholder="Discount">
+
+        <div class="form-group">
+          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="6" required placeholder="Description" formControlName="description"></textarea>
+        </div>
+        <button mdbBtn color="success" block="true" class="my-4" type="submit" [disabled]="!vehicleForm.valid">
+          Save</button>
+        <button mdbBtn color="light" block="true" class="my-4" type="button" *ngIf='!editMode' (click)='clear()'>Cancel</button>
+        <button mdbBtn color="danger" block="true" class="my-4" type="button" *ngIf='editMode' (click)='delete()'>Delete</button>
+      </form>
+  </div>
+  <br>
+  <br>
+  <br>

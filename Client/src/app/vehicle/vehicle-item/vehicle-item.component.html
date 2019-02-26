@@ -1,0 +1,21 @@
+<div *ngIf="photos">
+<mdb-card class="card-deck" *ngIf="photos.length>0">
+    <!--Card image-->
+    <mdb-card-img [src]="'../../../assets/uploads/' + photos[0].fileName" alt="Card image cap"></mdb-card-img>
+    <!--Card content-->
+    <mdb-card-body>
+
+      <!--Title-->
+      <mdb-card-title>
+        <h4>{{vehicle.name}}</h4>
+      </mdb-card-title>
+
+      <!--Text-->
+      <mdb-card-text>{{vehicle.description}}
+      </mdb-card-text>
+
+      <a (click)="seeDetails()" mdbBtn color="primary" mdbWavesEffect>View Details</a>
+    </mdb-card-body>
+  </mdb-card>
+  <br>
+</div>

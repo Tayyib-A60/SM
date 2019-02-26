@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <app-vehicle-item class="col-12 col-sm-5 col-md-4 col-xl-3" style="margin: 0 auto !important;"
+    *ngFor="let vehicle of vehicles; let i = index"
+    [vehicle]='vehicle'
+    [index]='i'>
+    </app-vehicle-item>
+  </div>
+</div>
+<app-pagination *ngIf="queryResult.totalItems > query.pageSize" [totalItems]="queryResult.totalItems"
+  [pageSize]="query.pageSize" (pageChanged)="onPageChange($event)"></app-pagination>
+

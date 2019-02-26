@@ -1,0 +1,12 @@
+@media (min-width: 989px) {
+
+  .in-visible {
+    display: block;
+  }
+}
+@media (max-width: 988px) {
+
+  .in-visible {
+    display: none;
+  }
+}

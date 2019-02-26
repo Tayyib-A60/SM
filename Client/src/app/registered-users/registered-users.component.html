@@ -1,0 +1,29 @@
+<div class="col-md-6 col-md-offset-3" *ngIf="currentUser">
+  <h1>Hi {{currentUser.name}}</h1>
+  <h3>All Registered Users: </h3>
+  <ul *ngIf="users.length > 0">
+    <li *ngFor="let user of users">
+      {{user.name}} {{ user.email}} :
+      <a (click)='editUser()'>Edit</a> :
+       <a (click)='deleteUser(user.id)'>Delete</a>
+    </li>
+  </ul>
+  <!-- <p><a routerLink='/login'>Logout</a> </p> -->
+</div>
+<br><hr>
+<div class="col-md-6 col-md-offset-3">
+  <h1>Contacts</h1>
+  <hr>
+  <h3>All Contacts Submitted: </h3>
+  <ul *ngIf="contacts.length > 0">
+    <li *ngFor="let contact of contacts">
+      <h3>{{contact.name}}</h3>
+       <p>{{ contact.email}}</p>
+       <p>{{contact.phone}}</p>
+       <p>{{contact.message}}</p>
+    </li>
+  </ul>
+</div>
+<br>
+<br>
+<br>

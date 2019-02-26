@@ -1,0 +1,16 @@
+.carousel{
+  background: #55c57a;
+  margin-top: 20px;
+}
+.carousel .item{
+  background-size: cover;
+  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+  margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+margin: 0 auto;
+max-width: 70rem;
+
+}

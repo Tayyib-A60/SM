@@ -1,0 +1,17 @@
+.skSocial {
+  font-size: 120%;
+
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
+  &:link, &:visited {
+    transition: .2s all;
+  }
+
+  &:hover {
+    color: #204142;
+    background-color: #f44336;
+    transform: scale(1.2);
+  }
+}
