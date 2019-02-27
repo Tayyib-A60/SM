@@ -7,7 +7,7 @@ import { VehicleService } from './vehicle.service';
 
 @Injectable()
 export class VehicleResolver implements Resolve<QueryResult> {
-  private readonly pageSize = 5;
+  private readonly pageSize = 8;
   query: any = {
     pageSize: this.pageSize
   };

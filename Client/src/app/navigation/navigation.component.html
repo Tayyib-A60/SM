@@ -10,24 +10,24 @@
 
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"  >
+          <li class="nav-item active" routerLinkActive="active">
               <a class="nav-link waves-light"  mdbWavesEffect [routerLink]='["/publicVehicles"]'>
                 Products</a>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" mdbWavesEffect [routerLink]='["/newVehicle"]'
               *ngIf="isAuthenticated()">
                 New Vehicle</a>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" mdbWavesEffect [routerLink]='["/vehicles"]' *ngIf="isAuthenticated()">
                 Vehicles</a>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" mdbWavesEffect [routerLink]='["/contactus"]'>
                 Contact us</a>
           </li>
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" mdbWavesEffect routerLink="/user/register"
               *ngIf="isAuthenticated()">Register</a>
           </li>
@@ -35,7 +35,7 @@
               <a class="nav-link waves-light" mdbWavesEffect routerLink="/user/login"
               *ngIf="isAuthenticated()">Login</a>
           </li> -->
-          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" (click)="logout()"
               *ngIf="isAuthenticated()">Logout</a>
           </li>

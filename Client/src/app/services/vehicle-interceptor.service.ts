@@ -1,15 +1,15 @@
 import { Observable } from 'rxjs';
 import { HttpInterceptor, HttpRequest, HttpEvent, HttpHandler } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-// import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class VehicleInterceptor implements HttpInterceptor {
-  // url = environment.url;
+  url = environment.url;
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     console.log(`VehicleInterceptorService ${req.url}`);
     let jsonreq: HttpRequest<any> = req.clone({});
-    if (req.url.startsWith('http://localhost:5000/api/skineroVehicles/photos/')) {
+    if (req.url.startsWith(this.url + '/api/skineroVehicles/photos/')) {
       jsonreq = req.clone({
         setHeaders: {'Content-Type': 'multipart/form-data'}
       });

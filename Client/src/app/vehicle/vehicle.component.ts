@@ -28,12 +28,12 @@ export class VehicleComponent implements OnInit {
 
   ngOnInit() {
     // this.vehicleService.getValues().subscribe(res => {
-    //   // console.log('resoooo', res);
+    //   console.log('resoooo', res);
     // });
     // this.vehicleService.getVehicles().subscribe(res => {
     //   // console.log('Veh', res);
     // });
-    this.getVehiclees();
+    this.getVehicles();
   }
   private getVehicles() {
     const resolveData: QueryResult | ErrorMessage = this.route.snapshot.data['resolvedVehicles'];

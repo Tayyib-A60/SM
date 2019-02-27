@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
-  // url = environment.url;
+  url = environment.url;
   constructor(private httpClient: HttpClient,
               private notifierService: NotifierService,
               private router: Router,
@@ -17,7 +17,7 @@ export class AuthService {
               }
 
   login(email: string, password: string) {
-    return this.httpClient.post('http://localhost:5000/api/skineroVehicles/user/authenticate', {email: email, password: password})
+    return this.httpClient.post(this.url + '/api/skineroVehicles/user/authenticate', {email: email, password: password})
     .pipe(
       catchError((err: HttpErrorResponse) => this.handleHttpError(err))
     );
