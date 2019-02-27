@@ -65,7 +65,7 @@ import { PaginationComponent } from './shared/pagination/pagination.component';
           distance: 25
         },
         vertical: {
-          position: 'top',
+          position: 'bottom',
           distance: 12,
           gap: 10
         }

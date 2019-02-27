@@ -102,7 +102,6 @@ export class AddPicturesComponent implements OnInit {
         switch (event.type) {
           case HttpEventType.Sent:
             console.log('Request sent');
-            this.notifierService.notify('success', 'Photo uploaded succesfully');
             break;
           case HttpEventType.UploadProgress:
             const percentage = Math.round(100 * event.loaded / event.total);
@@ -110,12 +109,12 @@ export class AddPicturesComponent implements OnInit {
             break;
           case HttpEventType.Response:
             this.photos.push(event.body);
-            // this.notifierService.notify('success', 'Photo uploaded succesfully');
+            this.notifierService.notify('success', 'Photo upload was successful');
         }
     }, err => {
       console.log('Error', err);
       console.log(err.error);
-      // this.toastr.error(err.error, 'Error');
+      this.notifierService.notify('error', 'Error uploading photo');
     });
   }
 }

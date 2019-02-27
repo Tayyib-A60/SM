@@ -23,10 +23,10 @@ export class ContactusComponent implements OnInit {
     const phone = '';
     const message = '';
     this.contactForm =  new FormGroup({
-      'name': new FormControl(name, Validators.required),
-      'email': new FormControl(email, [Validators.required, Validators.email]),
-      'phone': new FormControl(phone, [Validators.required]),
-      'message': new FormControl(message)
+      name: new FormControl(name, Validators.required),
+      email: new FormControl(email, [Validators.required, Validators.email]),
+      phone: new FormControl(phone, [Validators.required]),
+      message: new FormControl(message)
     });
   }
   onSubmit() {

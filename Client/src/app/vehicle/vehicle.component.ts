@@ -20,31 +20,31 @@ export class VehicleComponent implements OnInit {
     vehicles: []
   };
   query: any = {
-    pageSize: this.pageSize
+    pageSize: 8
   };
   // vehicle: Vehicle = <Vehicle>{};
 
   constructor(private vehicleService: VehicleService, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
-    this.vehicleService.getValues().subscribe(res => {
-      console.log('resoooo', res);
-    });
-    this.vehicleService.getVehicles().subscribe(res => {
-      console.log('Veh', res);
-    });
-    this.getVehicles();
+    // this.vehicleService.getValues().subscribe(res => {
+    //   // console.log('resoooo', res);
+    // });
+    // this.vehicleService.getVehicles().subscribe(res => {
+    //   // console.log('Veh', res);
+    // });
+    this.getVehiclees();
   }
   private getVehicles() {
     const resolveData: QueryResult | ErrorMessage = this.route.snapshot.data['resolvedVehicles'];
     this.queryResult = resolveData as QueryResult;
-    console.log(this.queryResult);
+    // console.log(this.queryResult);
     this.vehicles = this.queryResult.vehicles as Vehicle[];
     if (resolveData instanceof ErrorMessage) {
-      console.log(resolveData.message);
+      // console.log(resolveData.message);
     } else if (resolveData instanceof Vehicle) {
-      console.log(resolveData);
-      console.log(this.vehicles);
+      // console.log(resolveData);
+      // console.log(this.vehicles);
     }
     // this.vehicleService.getVehicles().subscribe(response => {
     //   this.vehicles = response as Vehicle;
@@ -57,7 +57,6 @@ export class VehicleComponent implements OnInit {
     this.vehicleService.getVehicles(this.query).subscribe(queryResult => {
       this.queryResult = queryResult as QueryResult;
       this.vehicles = this.queryResult.vehicles;
-      console.log(this.queryResult);
     });
   }
   onPageChange(page: number) {

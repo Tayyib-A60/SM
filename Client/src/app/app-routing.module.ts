@@ -25,9 +25,9 @@ import { AdminVehicleListComponent } from './admin-vehicle-list/admin-vehicle-li
 
 const routes: Routes = [
   {path: 'publicVehicles', component: VehicleComponent,  resolve: {resolvedVehicles: VehicleResolver}},
-  { path: 'newVehicle', component: VehicleEditComponent, canActivate: [AuthGuardService]},
-  { path: 'newVehicle/:id', component: VehicleEditComponent, canActivate: [AuthGuardService] },
-  { path: 'vehicles', component: AdminVehicleListComponent, canActivate: [AuthGuardService] },
+  {path: 'newVehicle', component: VehicleEditComponent, canActivate: [AuthGuardService]},
+  {path: 'newVehicle/:id', component: VehicleEditComponent, canActivate: [AuthGuardService] },
+  {path: 'vehicles', component: AdminVehicleListComponent, canActivate: [AuthGuardService] },
   {path: 'vehicle/photo/:id', component: AddPicturesComponent, canActivate: [AuthGuardService]},
   {path: 'publicVehicles', component: VehicleComponent, resolve: {resolvedVehicles: VehicleResolver}},
   {path: 'vehicle/details/:id', component: VehicleDetailsComponent},

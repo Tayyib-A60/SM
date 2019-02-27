@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../services/authentication.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-login',
@@ -15,10 +16,14 @@ export class LoginComponent implements OnInit {
     email: '',
     password: ''
   };
-  constructor(private authService: AuthService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private authService: AuthService,
+              private route: ActivatedRoute,
+              private router: Router,
+              private notifierService: NotifierService) { }
 
   ngOnInit() {
-    this.authService.logout();
+    // if(localStorage.)
+    // this.authService.logout();
     this.initializeForm();
     this.returnUrl = this.route.snapshot.queryParams['../registeredUsers'] || '/';
   }
@@ -36,10 +41,11 @@ export class LoginComponent implements OnInit {
       const user = res;
       if (user && user['token']) {
         localStorage.setItem('currentUser', JSON.stringify(user));
+        this.notifierService.notify('success', `Login successful for ${this.user.email}`);
       }
       this.router.navigate(['user/registeredUsers']);
     }, error => {
-      console.log(error);
+      this.notifierService.notify('error', `You're not logged in, please check your username/password`);
     });
     this.loginForm = new FormGroup({});
   }
