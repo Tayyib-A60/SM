@@ -1,0 +1,120 @@
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.deps.json
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.json
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.dev.json
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.dll
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.csprojAssemblyReference.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CoreCompileInputs.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cs
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfoInputs.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfo.cs
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.input.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.output.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorCoreGenerate.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cache
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cs
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\Akintunde\Documents\Tayyib\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.deps.json
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.json
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.dev.json
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.dll
+C:\Users\User\Documents\Solutions\SkineroMotors\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.csprojAssemblyReference.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cs
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfo.cs
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.input.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.output.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorCoreGenerate.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cache
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cs
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\User\Documents\Solutions\SkineroMotors\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.deps.json
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.json
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.dev.json
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.dll
+C:\Users\User\Desktop\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.csprojAssemblyReference.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfo.cs
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.input.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.output.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorCoreGenerate.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cs
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\User\Desktop\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.deps.json
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.json
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.dev.json
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.Views.dll
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfo.cs
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.input.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.output.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorCoreGenerate.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cs
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\User\Desktop\Skinero Motors\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.deps.json
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.json
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.dev.json
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.Views.dll
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\bin\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csprojAssemblyReference.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CoreCompileInputs.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cs
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfoInputs.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfo.cs
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.input.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.output.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorCoreGenerate.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cache
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cs
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete
