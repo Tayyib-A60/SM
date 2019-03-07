@@ -32,6 +32,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminVehicleListComponent } from './admin-vehicle-list/admin-vehicle-list.component';
 import { PaginationComponent } from './shared/pagination/pagination.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FeaturedVehicleResolver } from './services/featured-vehicle-resolver.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { PaginationComponent } from './shared/pagination/pagination.component';
     RegisteredUsersComponent,
     AddPicturesComponent,
     PaginationComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -75,9 +78,10 @@ import { PaginationComponent } from './shared/pagination/pagination.component';
   ],
   providers: [VehicleService, PhotoService, VehicleResolver, VehicleInterceptor,
      AuthGuardService, AuthService, LogResponseInterceptor, CacheInterceptor,
-     ContactFormService, UserService, HttpCacheService,
+     ContactFormService, UserService, HttpCacheService, FeaturedVehicleResolver,
      {provide: HTTP_INTERCEPTORS, useClass: LogResponseInterceptor, multi: true},
   {provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

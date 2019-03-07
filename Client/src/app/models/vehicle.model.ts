@@ -5,4 +5,5 @@ export class Vehicle {
   costPrice: number;
   sellingPrice: number;
   discount: number;
+  featured: boolean;
 }

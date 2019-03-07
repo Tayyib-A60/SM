@@ -22,17 +22,10 @@ export class VehicleComponent implements OnInit {
   query: any = {
     pageSize: 8
   };
-  // vehicle: Vehicle = <Vehicle>{};
 
   constructor(private vehicleService: VehicleService, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
-    // this.vehicleService.getValues().subscribe(res => {
-    //   console.log('resoooo', res);
-    // });
-    // this.vehicleService.getVehicles().subscribe(res => {
-    //   // console.log('Veh', res);
-    // });
     this.getVehicles();
   }
   private getVehicles() {
@@ -46,12 +39,6 @@ export class VehicleComponent implements OnInit {
       // console.log(resolveData);
       // console.log(this.vehicles);
     }
-    // this.vehicleService.getVehicles().subscribe(response => {
-    //   this.vehicles = response as Vehicle;
-    //   console.log(this.vehicles);
-    // }, error => {
-    //   console.log(error);
-    // });
   }
   private getVehiclees() {
     this.vehicleService.getVehicles(this.query).subscribe(queryResult => {
@@ -62,8 +49,6 @@ export class VehicleComponent implements OnInit {
   onPageChange(page: number) {
     this.query.page = page;
     this.getVehiclees();
-  }
-  display() {
   }
 
 }

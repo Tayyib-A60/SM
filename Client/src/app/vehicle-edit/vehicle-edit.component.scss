@@ -1,0 +1,72 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) { @content };    //600px
+  }
+  @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) { @content };     //900px
+  }
+  @if $breakpoint == tab-land {
+      @media only screen and (max-width: 75em) { @content };    //1200px
+  }
+  @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) { @content };    //1800
+  }
+}
+$default-font-size: 1rem;
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+.form {
+  &__radio-group {
+    text-align: left !important;
+
+      @include respond(tab-port) {
+          width: 100%;
+          margin-bottom: 2rem;
+      }
+  }
+
+  &__radio-input {
+      display: none;
+  }
+
+  &__radio-label {
+      font-size: $default-font-size;
+      cursor: pointer;
+      color: #222;
+      font-weight: 500;
+      position: relative;
+      padding-left: 3.5rem;
+  }
+
+  &__radio-button {
+      height: 1.5rem;
+      width: 1.5rem;
+      border: 5px solid #f44336;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+
+      &::after {
+          content: "";
+          display: block;
+          height: .5rem;
+          width: .5rem;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #f44336;
+          opacity: 0;
+          transition: opacity .2s;
+      }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+      opacity: 1;
+  }
+}

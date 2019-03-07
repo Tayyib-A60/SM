@@ -22,8 +22,11 @@ import { VehicleEditComponent } from './vehicle-edit/vehicle-edit.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AdminVehicleListComponent } from './admin-vehicle-list/admin-vehicle-list.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FeaturedVehicleResolver } from './services/featured-vehicle-resolver.service';
 
 const routes: Routes = [
+  {path: 'home', component: HomepageComponent, resolve: {resolvedFeaturedVehicles: FeaturedVehicleResolver}},
   {path: 'publicVehicles', component: VehicleComponent,  resolve: {resolvedVehicles: VehicleResolver}},
   {path: 'newVehicle', component: VehicleEditComponent, canActivate: [AuthGuardService]},
   {path: 'newVehicle/:id', component: VehicleEditComponent, canActivate: [AuthGuardService] },
@@ -34,7 +37,8 @@ const routes: Routes = [
   {path: 'user/registeredUsers', component: RegisteredUsersComponent, canActivate: [AuthGuardService]},
   {path: 'user/login', component: LoginComponent},
   {path: 'user/register', component: RegisterComponent},
-  {path: 'contactus', component: ContactusComponent}
+  {path: 'contactus', component: ContactusComponent},
+  {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({

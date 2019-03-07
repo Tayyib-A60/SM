@@ -18,8 +18,14 @@ export class VehicleService {
     return this.httpClient.get(this.url + '/api/weather');
   }
 
-  getVehicles(filter?: any) {
-    return this.httpClient.get(this.url + '/api/skineroVehicles'  + '?' + this.toQueryString(filter))
+  getVehicles(filter?: any, search?: string) {
+    return this.httpClient.get(this.url + '/api/skineroVehicles'  + '?' + this.toQueryString(filter) + search)
+    .pipe(
+      catchError((error: HttpErrorResponse) => this.handleError(error))
+    );
+  }
+  getFeaturedVehicles(filter?: any) {
+    return this.httpClient.get(this.url + '/api/skineroVehicles/featured'  + '?' + this.toQueryString(filter))
     .pipe(
       catchError((error: HttpErrorResponse) => this.handleError(error))
     );
