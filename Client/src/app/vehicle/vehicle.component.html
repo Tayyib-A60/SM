@@ -1,13 +1,34 @@
+<br>
+<br>
+<div class="centerSearch">
+  <div class="md-form my-0">
+    <input class="form-control mr-sm-2 searchWidth" [(ngModel)]='query.searchString' name="searchString"  type="text" placeholder="Search">
+    <button class="searchButton" mdbBtn color="red" outline="true" size="md" class="my-0 waves-light" type="button" (click)="searchDB()" mdbWavesEffect>Search</button>
+  </div>
+</div>
 <div class="container">
   <br>
   <br>
   <div class="row">
-    <app-vehicle-item class="col-12 col-sm-5 col-md-4 col-xl-3" style="margin: 0 auto !important;"
+    <app-vehicle-item class="col-10 col-sm-6 col-md-4 col-xl-3" style="margin: 0 auto !important;"
     *ngFor="let vehicle of vehicles; let i = index"
     [vehicle]='vehicle'
     [index]='i'>
     </app-vehicle-item>
   </div>
+</div>
+<div class="notFound" *ngIf='notFound'>
+  <h1 class="noProdMatched">Sorry, No Products matched</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
 <app-pagination *ngIf="queryResult.totalItems > query.pageSize" [totalItems]="queryResult.totalItems"
   [pageSize]="query.pageSize" (pageChanged)="onPageChange($event)"></app-pagination>

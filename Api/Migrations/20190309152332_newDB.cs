@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SkineroMotors.Migrations
 {
-    public partial class NewMigration : Migration
+    public partial class newDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -51,7 +51,8 @@ namespace SkineroMotors.Migrations
                     CostPrice = table.Column<int>(nullable: false),
                     LastUpdate = table.Column<DateTime>(nullable: false),
                     SellingPrice = table.Column<int>(nullable: false),
-                    Discount = table.Column<int>(nullable: true)
+                    Discount = table.Column<int>(nullable: true),
+                    Featured = table.Column<bool>(nullable: true)
                 },
                 constraints: table =>
                 {

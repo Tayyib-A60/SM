@@ -9,13 +9,16 @@ import { VehicleService } from './vehicle.service';
 export class VehicleResolver implements Resolve<QueryResult> {
   private readonly pageSize = 8;
   query: any = {
-    pageSize: this.pageSize
+    pageSize: this.pageSize,
+    searchString: ''
   };
-  searchString = '';
+  // search: any = {
+  //   searchString: ''
+  // };
   constructor(private vehicleService: VehicleService) {
   }
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<QueryResult> {
-    return this.vehicleService.getVehicles(this.query, this.searchString)
+    return this.vehicleService.getVehicles(this.query)
     .pipe(
       catchError(err => of(err))
     );

@@ -37,6 +37,7 @@ namespace SkineroMotors
             // services.BuildServiceProvider().GetService<SMDbContext>().Database.Migrate();(production)
             // services.AddCors();
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            services.AddSingleton<IConfiguration>(Configuration);
             services.Configure<PhotoSettings>(Configuration.GetSection("PhotoSettings"));
             services.AddScoped<IContactUsRepository, ContactUsRepository>();
             services.AddScoped<IPhotoRepository,PhotoRepository>();

@@ -23,7 +23,6 @@ export class RegisteredUsersComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.users);
     this.getUsers();
     this.getContacts();
   }
@@ -32,7 +31,6 @@ export class RegisteredUsersComponent implements OnInit {
       const index = this.users.findIndex(user => user.id === id);
       this.users.splice(index, 1);
     }, error => {
-      console.log(error);
     });
   }
   editUser() {

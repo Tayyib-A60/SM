@@ -22,8 +22,6 @@ export class LoginComponent implements OnInit {
               private notifierService: NotifierService) { }
 
   ngOnInit() {
-    // if(localStorage.)
-    // this.authService.logout();
     this.initializeForm();
     this.returnUrl = this.route.snapshot.queryParams['../registeredUsers'] || '/';
   }

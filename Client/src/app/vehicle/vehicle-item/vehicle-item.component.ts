@@ -25,7 +25,6 @@ export class VehicleItemComponent implements OnInit {
   private getPhoto() {
     this.photoService.getPhotos(this.vehicle.id).subscribe(res => {
       this.photos = res as Photo[];
-      console.log(this.photos);
     });
   }
 

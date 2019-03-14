@@ -23,12 +23,9 @@ export class VehicleDetailsComponent implements OnInit {
     });
     this.vehicleService.getVehicle(this.index).subscribe(vehicle => {
       this.vehicle = vehicle as Vehicle;
-      console.log(this.vehicle);
     }, error => {
-      console.log(error);
     });
     this.photoService.getPhotos(this.index).subscribe(res => {
-      console.log(res);
       this.photos = res as Photo[];
     });
   }

@@ -6,10 +6,11 @@ import { NotifierService } from 'angular-notifier';
 @Component({
   selector: 'app-contactus',
   templateUrl: './contactus.component.html',
-  styleUrls: ['./contactus.component.css']
+  styleUrls: ['./contactus.component.css', './contactus.component.scss']
 })
 export class ContactusComponent implements OnInit {
   contactForm: FormGroup;
+  buttonStatus = 'Submit';
 
   constructor(private contactService: ContactFormService, private notifierService: NotifierService) { }
 
@@ -30,12 +31,13 @@ export class ContactusComponent implements OnInit {
     });
   }
   onSubmit() {
-     this.contactService.createContactForm(this.contactForm.value).subscribe(res => {
-       console.log(res);
+    this.buttonStatus = 'Submitting';
+    this.contactService.createContactForm(this.contactForm.value).subscribe(res => {
      }, (err) => {
-      this.notifierService.notify('error', `Not submitted, please check your internet`);
+      this.notifierService.notify('error', `An unexpected error occured, Please try again`);
      }, () => {
-      this.notifierService.notify('success', 'Submitted');
+      this.notifierService.notify('success',  `Sent, We'll be in touch shortly`);
+      this.buttonStatus = 'Submit';
      });
      this.initializeContactForm();
   }

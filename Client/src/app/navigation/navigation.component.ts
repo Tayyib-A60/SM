@@ -22,7 +22,7 @@ export class NavigationComponent implements OnInit {
  }
 
  ngOnInit() {
-   this.vehicleResolver.searchString = this.searchString;
+  //  this.vehicleResolver.searchString = this.searchString;
  }
 
  collapse() {

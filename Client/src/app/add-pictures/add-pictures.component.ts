@@ -72,10 +72,8 @@ export class AddPicturesComponent implements OnInit {
     if (confirm('Are you sure?')) {
       this.vehicleService.deleteVehicle(this.vehicle.id)
         .subscribe(x => {
-          console.log(x);
           this.router.navigate(['../../../vehicles'], {relativeTo: this.route});
         }, (err) => {
-          console.log(err);
         });
     }
   }
@@ -84,10 +82,7 @@ export class AddPicturesComponent implements OnInit {
       const index = this.photos.findIndex(p => p.id === id && p.vehicleId === this.vehicle.id);
       this.photos.splice(index, 1);
       this.notifierService.notify('success', `Photo with id ${id}  succesfully removed`);
-      console.log(res);
-      console.log(this.photos);
     }, (err) => {
-      console.log(err);
     });
   }
   edit() {
@@ -101,7 +96,6 @@ export class AddPicturesComponent implements OnInit {
     .subscribe((event: HttpEvent<any>) => {
         switch (event.type) {
           case HttpEventType.Sent:
-            console.log('Request sent');
             break;
           case HttpEventType.UploadProgress:
             const percentage = Math.round(100 * event.loaded / event.total);
@@ -112,8 +106,6 @@ export class AddPicturesComponent implements OnInit {
             this.notifierService.notify('success', 'Photo upload was successful');
         }
     }, err => {
-      console.log('Error', err);
-      console.log(err.error);
       this.notifierService.notify('error', 'Error uploading photo');
     });
   }

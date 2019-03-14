@@ -1,0 +1,13 @@
+.active {
+    background-color: #ff7d74 !important;
+}
+.nav-item:hover {
+    background-color: #ff7d74 !important;
+}
+.nav-link {
+    font-size: 1.2rem !important;
+
+    &:hover {
+        color: rgb(133, 130, 130) !important;
+    }
+}

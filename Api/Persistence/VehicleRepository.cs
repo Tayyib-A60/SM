@@ -41,8 +41,13 @@ namespace SkineroMotors.Persistence
             query = query.ApplyOrdering(vehicleQueryObject, columnsMap);
             query = query.ApplyPaging(vehicleQueryObject);
             result.Vehicles =  await query.ToListAsync();
-            result.Vehicles = result.Vehicles.Where( vehicle => vehicle.Name.StartsWith(searchString));
+            if(String.IsNullOrEmpty(searchString)) {
+                return result;
+            }
+            else {
+            result.Vehicles = result.Vehicles.Where( vehicle => vehicle.Name.ToLower().StartsWith(searchString.ToLower()));
             return result;
+            }
         }
         public async Task<QueryResult<Vehicle>> GetFeaturedVehicles(VehicleQuery vehicleQueryObject)
         {

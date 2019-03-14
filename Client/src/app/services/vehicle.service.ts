@@ -19,7 +19,7 @@ export class VehicleService {
   }
 
   getVehicles(filter?: any, search?: string) {
-    return this.httpClient.get(this.url + '/api/skineroVehicles'  + '?' + this.toQueryString(filter) + search)
+    return this.httpClient.get(this.url + '/api/skineroVehicles' + '?' + this.toQueryString(filter))
     .pipe(
       catchError((error: HttpErrorResponse) => this.handleError(error))
     );

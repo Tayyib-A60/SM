@@ -10,14 +10,14 @@ using SkineroMotors.Persistence;
 namespace SkineroMotors.Migrations
 {
     [DbContext(typeof(SMDbContext))]
-    [Migration("20190306125530_NewMigration")]
-    partial class NewMigration
+    [Migration("20190309152332_newDB")]
+    partial class newDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.8-servicing-32085")
+                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -104,6 +104,8 @@ namespace SkineroMotors.Migrations
                         .HasMaxLength(1000);
 
                     b.Property<int?>("Discount");
+
+                    b.Property<bool?>("Featured");
 
                     b.Property<DateTime>("LastUpdate");
 

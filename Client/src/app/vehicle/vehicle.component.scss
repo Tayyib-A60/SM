@@ -1,0 +1,16 @@
+.searchWidth {
+    width: 30%;
+    margin-left: 2rem;
+    float: left !important;
+    // margin: 0 auto !important;
+}
+.searchButton {
+    float: left !important;
+    // margin-left: 0 3rem;
+    border-radius: .3rem !important;
+}
+.noProdMatched {
+    padding: 2rem;
+    text-transform: uppercase;
+    color: #f44336;
+}
