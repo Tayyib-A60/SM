@@ -15,3 +15,21 @@
     transform: scale(1.2);
   }
 }
+.skLinks {
+  font-size: 120%;
+
+  &:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+
+  &:link,
+  &:visited {
+    transition: .2s all;
+  }
+
+  &:hover {
+    color: #204142;
+    background-color: #f44336;
+    transform: scale(1.1);
+  }
+}

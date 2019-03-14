@@ -118,3 +118,27 @@ C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\Skiner
 C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.dll
 C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
 C:\Users\Adesokan\Documents\My Solutions\SM\smapi\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.deps.json
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.json
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.runtimeconfig.dev.json
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.dll
+C:\Users\SHOFU\Videos\SM\api\bin\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.csprojAssemblyReference.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CoreCompileInputs.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorAssemblyInfo.cs
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfoInputs.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.AssemblyInfo.cs
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.input.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.TagHelpers.output.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorCoreGenerate.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cache
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.RazorTargetAssemblyInfo.cs
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.Views.pdb
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.dll
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.pdb
+C:\Users\SHOFU\Videos\SM\api\obj\Debug\netcoreapp2.1\SkineroMotors.csproj.CopyComplete

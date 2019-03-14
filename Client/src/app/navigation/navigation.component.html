@@ -23,18 +23,18 @@
               <a class="nav-link waves-light" mdbWavesEffect [routerLink]='["/vehicles"]' *ngIf="isAuthenticated()">
                 Vehicles</a>
           </li>
-          <!-- <li class="nav-item" routerLinkActive="active">
+          <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" mdbWavesEffect [routerLink]='["/contactus"]'>
                 Contact us</a>
           </li>
           <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" mdbWavesEffect routerLink="/user/register"
               *ngIf="isAuthenticated()">Register</a>
-          </li> -->
-          <!-- <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          </li>
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
               <a class="nav-link waves-light" mdbWavesEffect routerLink="/user/login"
-              *ngIf="isAuthenticated()">Login</a>
-          </li> -->
+              *ngIf="!isAuthenticated()">Login</a>
+          </li>
           <li class="nav-item" routerLinkActive="active">
               <a class="nav-link waves-light" (click)="logout()"
               *ngIf="isAuthenticated()">Logout</a>
@@ -44,12 +44,12 @@
       <!-- Links -->
 
 <!-- Search form -->
-      <form class="form-inline waves-light" mdbWavesEffect>
+      <!-- <form class="form-inline waves-light" mdbWavesEffect>
           <div class="md-form my-0">
               <input class="form-control mr-sm-2" [value]='searchString' type="text" placeholder="Search">
               <button mdbBtn color="red" outline="true" size="sm" class="my-0 waves-light" type="button" mdbWavesEffect>Search</button>
           </div>
-      </form>
+      </form> -->
   </links>
   <!-- Collapsible content -->
 

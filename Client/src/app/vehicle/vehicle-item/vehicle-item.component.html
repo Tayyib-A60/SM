@@ -12,10 +12,14 @@
       </mdb-card-title>
 
       <!--Text-->
-      <mdb-card-text>{{vehicle.description}}
+      <mdb-card-text>{{vehicle.costPrice | currency : 'NGN': 'symbol-narrow'}}
+      </mdb-card-text>
+      <mdb-card-text style="text-decoration: line-through !important;">{{vehicle.sellingPrice | currency : 'NGN': 'symbol-narrow'}}
+      </mdb-card-text>
+      <mdb-card-text>
+        <a (click)="seeDetails()" mdbBtn color="primary" mdbWavesEffect>View Details</a>
       </mdb-card-text>
 
-      <a (click)="seeDetails()" mdbBtn color="primary" mdbWavesEffect>View Details</a>
     </mdb-card-body>
   </mdb-card>
   <br>

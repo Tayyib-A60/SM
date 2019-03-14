@@ -33,8 +33,6 @@ export class RegisterComponent implements OnInit {
   register() {
     this.userService.create(this.registrationForm.value).subscribe(user => {
       this.user = user as User;
-      console.log(user);
-      // this.toastr.success(`User with ${this.user.email} registered successfully`, 'Registered');
     }, error => {
     });
     this.registrationForm = new FormGroup({});

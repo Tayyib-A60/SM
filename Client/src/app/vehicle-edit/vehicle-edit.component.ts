@@ -27,13 +27,11 @@ export class VehicleEditComponent implements OnInit {
       this.editMode = params['id'] != null;
     });
     this.initializeForm();
-    console.log(this.vehicleForm.value);
   }
   private getVehicle() {
     this.vehicleService.getVehicle(this.index).subscribe(vehicle => {
       this.vehicle = vehicle as Vehicle;
     }, error => {
-      console.log(error);
     });
   }
   private initializeForm() {
@@ -46,14 +44,16 @@ export class VehicleEditComponent implements OnInit {
     if (this.editMode) {
       this.vehicleService.getVehicle(this.index).subscribe(vehicle => {
         this.vehicle = vehicle as Vehicle;
-        this.vehicleForm =  new FormGroup({
-          name: new FormControl(this.vehicle.name, Validators.required),
-          description: new FormControl(this.vehicle.description, Validators.required),
-          costPrice: new FormControl(this.vehicle.costPrice, [Validators.required,  Validators.pattern(/^[1-9]+[0-9]*$/)]),
-          sellingPrice: new FormControl(this.vehicle.sellingPrice, [Validators.required,  Validators.pattern(/^[1-9]+[0-9]*$/)]),
-          discount: new FormControl(this.vehicle.discount),
-          featured: new FormControl(this.vehicle.featured)
-        });
+      }, err => {
+      }, () => {
+          this.vehicleForm = new FormGroup({
+            name: new FormControl(this.vehicle.name, Validators.required),
+            description: new FormControl(this.vehicle.description, Validators.required),
+            costPrice: new FormControl(this.vehicle.costPrice, [Validators.required, Validators.pattern(/^[1-9]+[0-9]*$/)]),
+            sellingPrice: new FormControl(this.vehicle.sellingPrice, [Validators.required, Validators.pattern(/^[1-9]+[0-9]*$/)]),
+            discount: new FormControl(this.vehicle.discount),
+            featured: new FormControl(this.vehicle.featured)
+          });
       });
     } else {
       this.vehicleForm =  new FormGroup({

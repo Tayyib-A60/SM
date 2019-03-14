@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 export class VehicleInterceptor implements HttpInterceptor {
   url = environment.url;
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log(`VehicleInterceptorService ${req.url}`);
+    // console.log(`VehicleInterceptorService ${req.url}`);
     let jsonreq: HttpRequest<any> = req.clone({});
     if (req.url.startsWith(this.url + '/api/skineroVehicles/photos/')) {
       jsonreq = req.clone({

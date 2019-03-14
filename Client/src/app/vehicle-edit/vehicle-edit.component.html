@@ -66,12 +66,12 @@
 </section> -->
 
 <div class="col col-md-6" style="margin: 0 auto !important;">
-    <form class="text-center border border-light p-5"  [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+    <form class="text-center border border-light p-4"  [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
 
         <p class="h4 mb-4">{{editMode? 'Edit Vehicle': 'Create new Vehicle'}}</p>
         <input type="text" id="defaultLoginFormEmail" formControlName="name" class="form-control mb-4" required placeholder="Vehicle Name">
-        <input type="number" id="defaultLoginFormEmail" formControlName="costPrice" class="form-control mb-4" required placeholder="Cost Price">
-        <input type="number" id="defaultLoginFormPassword" formControlName="sellingPrice" class="form-control mb-4" required placeholder="Selling Price">
+        <input type="number" id="defaultLoginFormEmail" formControlName="costPrice" class="form-control mb-4" required placeholder="New Selling Price">
+        <input type="number" id="defaultLoginFormPassword" formControlName="sellingPrice" class="form-control mb-4" required placeholder="Old Selling Price">
         <input type="number" id="defaultLoginFormPassword" formControlName="discount" class="form-control mb-4" placeholder="Discount">
 
         <div class="form-group">

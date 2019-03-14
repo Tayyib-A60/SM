@@ -12,11 +12,9 @@ export class AppComponent {
       this.router.events.subscribe((routerEvent: Event) => {
       if (routerEvent instanceof NavigationStart) {
         this.showLoadingIndicator = true;
-        console.log('navigation started');
       }
       if (routerEvent instanceof NavigationEnd || routerEvent instanceof NavigationCancel || routerEvent instanceof NavigationError) {
         this.showLoadingIndicator = false;
-        console.log('navigation ended');
       }
     });
   }

@@ -1,75 +1,38 @@
-<!-- <section class="section-book">
-    <div class="skrow">
-        <div class="skbook">
-            <div class="skbook__form">
-                <form [formGroup]="contactForm" (ngSubmit)='onSubmit()' class="skform">
-                    <div class="u-margin-bottom-small">
-                        <h2 class="skheading-secondary">Send us a message</h2>
-                    </div>
-                    <div class="skform__group">
-                        <input
-                        type="text"
-                        placeholder="Full name"
-                        id="name"
-                        formControlName="name"
-                        class="skform__input" required>
-                        <label for="name" class="skform__label">Full Name</label>
-                    </div>
-                    <div class="skform__group">
-                        <input
-                        type="text"
-                        placeholder="Email"
-                        id="email"
-                        formControlName="email"
-                        class="skform__input" required>
-                        <label for="email" class="skform__label">Email</label>
-                    </div>
-                    <div class="skform__group">
-                        <input
-                        type="text"
-                        placeholder="phone"
-                        id="phone"
-                        formControlName="phone"
-                        class="skform__input" required>
-                        <label for="phone" class="skform__label">Phone</label>
-                    </div>
-                    <div class="skform__group">
-                        <textarea
-                        type="text"
-                        placeholder="message"
-                        id="name"
-                        formControlName="message"
-                        class="skform__input" required
-                        rows="6"></textarea>
-                        <label for="message" class="skform__label">Your message</label>
-                    </div>
 
-                        <div class="skform__group">
-                            <div class="u-margin-top-medium">
-                                <button [disabled]="!contactForm.valid" type="submit" class="skbtn skbtn--green">Submit</button>
-                            </div>
-                        </div>
-                </form>
-            </div>
+<br><br>
+<div class="col col-md-6 col-lg-6 col-sm-6 col-xs-10" style=" margin: 0 auto !important;">
+<div class="book" style="margin: 0 auto !important;">
+    <p class="h5" style="text-align: center; color: #eee;">Send us a message</p>
+    <div class="book__form">
+      <form class="form" [formGroup]="contactForm" (ngSubmit)=onSubmit()>
+
+        <div class="form__group">
+          <input type="text" name="name" class="form__input" placeholder="Full name" formControlName="name" id="name"
+            required>
+          <label for="name" class="form__label">Full name</label>
         </div>
-    </div>
-</section> -->
 
-
-<div class="col col-md-6" style="margin: 0 auto !important;">
-    <form class="text-center border border-light p-5"  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-
-        <p class="h4 mb-4">Send us a message</p>
-        <input type="text" id="defaultLoginFormEmail" formControlName="name" class="form-control mb-4" placeholder="Full Name">
-        <input type="email" id="defaultLoginFormEmail" formControlName="email" class="form-control mb-4" placeholder="E-mail">
-        <input type="text" id="defaultLoginFormPassword" formControlName="phone" class="form-control mb-4" placeholder="phone">
-
-        <div class="form-group">
-          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="6" placeholder="Message" formControlName="message"></textarea>
+        <div class="form__group">
+          <input type="email" name="email" class="form__input" placeholder="Email address" id="email" formControlName="email"
+            required>
+          <label for="email" class="form__label">Email address</label>
         </div>
-        <button mdbBtn color="info" block="true" class="my-4" type="submit" [disabled]="!contactForm.valid">Submit</button>
+        <div class="form__group">
+          <input type="text" name="phone" class="form__input" placeholder="Phone" id="phone" formControlName="phone"
+            required>
+          <label for="phone" class="form__label">Phone</label>
+        </div>
+        <div class="form__group">
+          <textarea type="email" name="message" cols="12" rows="6" class="form__input" placeholder="Your message" id="message"
+            formControlName="message" required></textarea>
+          <label for="message" class="form__label">Your message</label>
+        </div>
+
+        <div class="form__group">
+          <button class="btnGrow" color="primary" mdbBtn type="submit" rounded="true" mdbWavesEffect [disabled]="!contactForm.valid">{{buttonStatus}}</button>
+        </div>
       </form>
+      <!-- <button class="btnGrow" color="primary" mdbBtn type="button" rounded="true" mdbWavesEffect (click)="show()">Test</button> -->
+    </div>
   </div>
-  <br>
-  <br>
-  <br>
+</div>

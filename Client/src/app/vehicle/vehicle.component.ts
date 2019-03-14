@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { VehicleService } from '../services/vehicle.service';
 import { QueryResult } from '../models/queryResult.model';
 import { HttpClient } from '@angular/common/http';
+import { VehicleResolver } from '../services/vehicle-resolver.service';
 
 @Component({
   selector: 'app-vehicle',
@@ -14,16 +15,21 @@ import { HttpClient } from '@angular/common/http';
 
 export class VehicleComponent implements OnInit {
   vehicles: Vehicle[] = [];
+  notFound = false;
   private readonly pageSize = 8;
   queryResult: QueryResult = {
     totalItems: 0,
     vehicles: []
   };
   query: any = {
-    pageSize: 8
+    pageSize: 8,
+    searchString: ''
   };
 
-  constructor(private vehicleService: VehicleService, private route: ActivatedRoute, private http: HttpClient) { }
+  constructor(private vehicleService: VehicleService,
+              private route: ActivatedRoute,
+              private http: HttpClient,
+              private vehicleResolver: VehicleResolver) { }
 
   ngOnInit() {
     this.getVehicles();
@@ -31,13 +37,9 @@ export class VehicleComponent implements OnInit {
   private getVehicles() {
     const resolveData: QueryResult | ErrorMessage = this.route.snapshot.data['resolvedVehicles'];
     this.queryResult = resolveData as QueryResult;
-    // console.log(this.queryResult);
     this.vehicles = this.queryResult.vehicles as Vehicle[];
     if (resolveData instanceof ErrorMessage) {
-      // console.log(resolveData.message);
     } else if (resolveData instanceof Vehicle) {
-      // console.log(resolveData);
-      // console.log(this.vehicles);
     }
   }
   private getVehiclees() {
@@ -50,5 +52,22 @@ export class VehicleComponent implements OnInit {
     this.query.page = page;
     this.getVehiclees();
   }
+  searchDB() {
+    this.vehicleResolver.query.searchString = this.query.searchString;
+    this.vehicleService.getVehicles(this.query, this.query.searchString).subscribe(queryResult => {
+        this.queryResult = queryResult as QueryResult;
+        this.vehicles = this.queryResult.vehicles;
+        if (this.vehicles.length === 0) {
+            this.notFound = true;
+          }
+        if (this.vehicles.length > 0) {
+            this.notFound = false;
+          }
+      }, (err) => {
+      }, () => {
+        this.vehicleResolver.query.searchString = '';
+        this.query.searchString = '';
+      });
+    }
 
 }

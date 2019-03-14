@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/SMAPI/SkineroMotors.csproj"
+                "${workspaceFolder}/API/SkineroMotors.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

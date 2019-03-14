@@ -6,12 +6,12 @@ import { tap } from 'rxjs/operators';
 @Injectable()
 export class LogResponseInterceptor implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    console.log(`LogResInt ${req.url}`);
+    // console.log(`LogResInt ${req.url}`);
     return next.handle(req)
     .pipe(
       tap(event => {
         if (event.type === HttpEventType.Response) {
-          console.log(event.body);
+          // console.log(event.body);
         }
       })
     );
