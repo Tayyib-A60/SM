@@ -10,8 +10,8 @@ using SkineroMotors.Persistence;
 namespace SkineroMotors.Migrations
 {
     [DbContext(typeof(SMDbContext))]
-    [Migration("20190309152332_newDB")]
-    partial class newDB
+    [Migration("20190315111100_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
