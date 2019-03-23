@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { VehicleService } from './services/vehicle.service';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { PhotoService } from './services/photo.service';
 import { VehicleInterceptor } from './services/vehicle-interceptor.service';
 import { VehicleResolver } from './services/vehicle-resolver.service';
@@ -24,6 +25,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AdminVehicleListComponent } from './admin-vehicle-list/admin-vehicle-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FeaturedVehicleResolver } from './services/featured-vehicle-resolver.service';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 const routes: Routes = [
   {path: 'home', component: HomepageComponent, resolve: {resolvedFeaturedVehicles: FeaturedVehicleResolver}},
@@ -37,6 +39,8 @@ const routes: Routes = [
   {path: 'user/registeredUsers', component: RegisteredUsersComponent, canActivate: [AuthGuardService]},
   {path: 'user/login', component: LoginComponent},
   {path: 'user/register', component: RegisterComponent},
+  {path: 'user/forgotPassword', component: ForgotPasswordComponent},
+  {path: 'user/resetpassword', component: ResetPasswordComponent},
   {path: 'contactus', component: ContactusComponent},
   {path: '**', redirectTo: 'home'}
 ];

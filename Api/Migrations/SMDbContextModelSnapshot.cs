@@ -84,6 +84,8 @@ namespace SkineroMotors.Migrations
                     b.Property<byte[]>("PasswordSalt")
                         .IsRequired();
 
+                    b.Property<int>("Role");
+
                     b.HasKey("Id");
 
                     b.ToTable("Users");

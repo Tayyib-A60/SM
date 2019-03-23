@@ -83,27 +83,27 @@ namespace SkineroMotors
             //     app.UseHsts();
             // }
 
-            app.Use(async (context, next) => {
-                await next();
+            // app.Use(async (context, next) => {
+            //     await next();
 
-                if(context.Response.StatusCode == 204 )
-                {
-                    context.Response.ContentLength = 0;
-                    await next();
-                }
+            //     if(context.Response.StatusCode == 204 )
+            //     {
+            //         context.Response.ContentLength = 0;
+            //         await next();
+            //     }
 
-                if(context.Response.StatusCode == 404 ) // && !Path.HasExtension(context.Request.Path.Value
-                {
-                    context.Request.Path = "/index.html";
-                    await next();
-                }
-            });
+            //     if(context.Response.StatusCode == 404 ) // && !Path.HasExtension(context.Request.Path.Value
+            //     {
+            //         context.Request.Path = "/index.html";
+            //         await next();
+            //     }
+            // });
 
             app.UseAuthentication();
             // app.UseHttpsRedirection();
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
-            // app.UseDefaultFiles();(production)
-            // app.UseStaticFiles();(production)
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseMvc();
 
             // app.UseSpaStaticFiles();

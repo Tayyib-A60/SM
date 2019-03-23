@@ -1,8 +1,10 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotifierModule } from 'angular-notifier';
+import { EditorModule } from '@tinymce/tinymce-angular';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +36,8 @@ import { AdminVehicleListComponent } from './admin-vehicle-list/admin-vehicle-li
 import { PaginationComponent } from './shared/pagination/pagination.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FeaturedVehicleResolver } from './services/featured-vehicle-resolver.service';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -52,12 +56,16 @@ import { FeaturedVehicleResolver } from './services/featured-vehicle-resolver.se
     AddPicturesComponent,
     PaginationComponent,
     VehicleDetailsComponent,
-    HomepageComponent
+    HomepageComponent,
+    ResetPasswordComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    CKEditorModule,
+    EditorModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,

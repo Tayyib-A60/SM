@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Api.Core.Models;
 
 namespace SkineroMotors.Core.Models
 {
@@ -15,5 +16,6 @@ namespace SkineroMotors.Core.Models
         public byte[] PasswordHash { get; set; }
         [Required]
         public byte[] PasswordSalt { get; set; }
+        public Role Role { get; set; }
     }
 }

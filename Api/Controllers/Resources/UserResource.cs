@@ -1,3 +1,5 @@
+using Api.Core.Models;
+
 namespace SkineroMotors.Controllers.Resources
 {
     public class UserResource
@@ -6,5 +8,6 @@ namespace SkineroMotors.Controllers.Resources
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public Role Role { get; set; }
     }
 }
